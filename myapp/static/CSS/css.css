@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  height: 60px;
+}
+
+#navbar ul {
+  /* font-family: 'Baloo Bhai', cursive; */
+  /* font-family: 'Baloo Bhai 2', cursive; */
+  font-family: 'Inter', sans-serif;
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity:1;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 2.1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+div.ns{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}

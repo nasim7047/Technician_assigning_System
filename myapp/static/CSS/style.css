@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: sans-serif; */
+}
+
+/* .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75)), rgba(0,0,0,0.75),url(img.jpg); 
+    background-size: cover;
+    background-position: center;
+} */
+
+/* .topnav {
+  overflow: hidden;
+  background-color: blue;
+  position: sticky;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  height: 60px;
+}
+
+#navbar ul {
+  /* font-family: 'Baloo Bhai', cursive; */
+  /* font-family: 'Baloo Bhai 2', cursive; */
+  font-family: 'Inter', sans-serif;
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity:1;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.split {
+  float: right;
+  position: absolute;
+  right: 0;
+  /* top: -15px; */
+}
+
+.link-1 {
+  right: 230px;
+  position: absolute;
+}
+
+.link-3 {
+  right: 20px;
+  position: absolute;
+}
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 200px;
+  height: 578px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url(/static/images/home.avif);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 665px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#home h1 {
+  color: #4c0a0a;
+  text-align: center;
+  margin-top: -250px;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 6%;
+  transform: translateY(-505);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+  color: rgb(252, 51, 16);
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25;
+}
+
+.drop input {
+  height: 35px;
+  width: 200px;
+}
+
+.drop select {
+  height: 35px;
+}
+
+/* Services section */
+
+#services {
+  margin: 35px;
+  display: flex;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 10px 20px;
+  margin: 25px 10px;
+  background-color: #f3eaea;
+  border-radius: 25px;
+}
+
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+#services .box p {
+  font-family: 'Bree Serif', serif;
+}
+
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../static/images/contactus.webp) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.2rem;
+  font-family: 'Bree Serif', serif;
+}
+
+button {
+  width: 200px;
+  padding: 10px 0;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  height: 55px;
+}
+
+/* span {
+  background: #df6721;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  
+} */
+
+span {
+  /* background: #df6721; */
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  z-index: -1;
+  transition: 0.5s;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+}
+span a {
+  background: #222;
+  color: #fff;
+  display: inline-block;
+  /* float:left;  remove */
+  margin: 10px 10px 0 0;
+  padding: 5px 10px;
+}
+
+/* button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+} */
+
+/* .split {
+  bottom: -100%;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-505);
+  text-align: right;
+}
+
+.split1 a {
+  float: right;
+  color: white;
+} */
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+
+/* Utility classes */
+.h-primary {
+  font-family: 'Bree Serif', serif;
+  font-size: 3.5rem;
+  padding: 10px;
+}
+
+.h-secondary {
+  font-family: 'Bree Serif', serif;
+  font-size: 2.1rem;
+  padding: 10px;
+}
+
+
+
+.btn {
+  /* padding: 5px 20px;
+  margin: 15px; */
+  width: 100%;
+  color: white;
+  border: 2px solid black;
+  background-color: rgb(119 23 23);
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  margin: 0 0 8px 0;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  /* color: #465b52; */
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #008178
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}

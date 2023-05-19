@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #666;
+    transition: all 0.3s ease;
+  }
+  
+  
+  

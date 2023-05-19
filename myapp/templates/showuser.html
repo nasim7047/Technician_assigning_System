@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>status</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <style>
+ 
+     table {
+    margin-top: 25px;
+    /* margin-left: 30px;
+    margin-left: 30px; */
+    font-size: 20px;
+    border: 5px solid black;
+    padding: 5px;
+    }
+    thead{
+        padding:10px;
+    }
+    tbody{
+        padding: 10px;
+
+    }
+    .container{
+        text-align: center;
+    }
+</style>
+  <body>
+    <div>
+          <h1 class="container-fluid p-2 bg-primary text-white text-center">Your order status</h1>
+    </div>
+    <table class="table table-success table-striped text-center">
+      
+        <thead class="thead-dark">
+          <tr>
+            <!-- <th scope="col">ID</th> -->
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Mobile</th>
+            <!-- <th scope="col">Roll_Number</th> -->
+            <th scope="col">Technician</th>
+            <!-- <th scope="col">Technician Mobile</th> -->
+          </tr>
+        </thead>
+        <tbody>
+            {% for i in table %}
+          <tr>
+            <!-- <th scope="row"></th> -->
+            <!-- <td>{{i.id}}</td> -->
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.phone}}</td>
+            <td>{{i.technician}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+</body>
+<h2><center style="color: red;">** Technician will call you after sometime</center></h2>
+</html>

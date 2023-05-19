@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/log.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Professional Login</title>
+</head>
+<script>
+    function myFunction() {
+    var x = document.getElementById("logPassword");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
+<body style="background-image: url(/static/images/tech.jpg)">
+  <nav id="navbar">
+    <ul>
+      <li class="item"><a href="/">Home</a></li>
+      <li class="item"><a href="register">Register As A Professional</a></li>
+      <li class="item"><a href="contact">Contact Us</a></li>
+      <li class="item"><a href="#">Help</a></li>
+    </ul>
+  </nav>
+
+  <form method="post" id="fileForm" role="form">
+    {% csrf_token %}
+    <div class="container">
+      <div class="box">
+        <!------------------ LOGIN --------------------->
+        <div class="box-login" id="login">
+          <div class="top-header">
+            <h3>Proffesional Login</h3>
+          </div>
+
+          <div class="input-group">
+            <div class="input-field">
+              <input type="email" name="email" class="input-box" id="logUser" required>
+              <label for="logUser">Email </label>
+            </div>
+            <div class="input-field">
+              <input type="password" name="pass" class="input-box" id="logPassword" required>
+              <label for="logPassword">Password</label>
+              <div class="eye-area">
+                <div class="eye-box" onclick="myFunction()">
+                  <i class="fa-regular fa-eye" id="eye"></i>
+                  <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="remember">
+              <input type="checkbox" id="formCheck" class="check">
+              <label for="formCheck"> Remember Password</label>
+            </div>
+            <div class="input-field">
+              <input type="submit" class="input-submit" value="Sign In">
+            </div>
+            <div class="forgot">
+              <a href="register">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
